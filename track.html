@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint - Online Complaint System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Complaint System</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Register Complaint</a></li>
+            <li><a href="track.html" class="active">Track Status</a></li>
+            <li><a href="admin.html">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Track Your Complaint</h2>
+            <form id="trackForm">
+                <div class="form-group">
+                    <label for="complaintId">Enter Complaint ID</label>
+                    <input type="text" id="complaintId" name="complaintId" placeholder="e.g., CMP-1001" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Track Status</button>
+            </form>
+            
+            <div id="trackResult" class="track-result" style="display: none;">
+                <h3>Complaint Details</h3>
+                <div class="detail-row">
+                    <span class="label">Complaint ID:</span>
+                    <span id="resultId" class="value"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Name:</span>
+                    <span id="resultName" class="value"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Category:</span>
+                    <span id="resultCategory" class="value"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Status:</span>
+                    <span id="resultStatus" class="value status-badge"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Submitted On:</span>
+                    <span id="resultDate" class="value"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Description:</span>
+                    <span id="resultDescription" class="value"></span>
+                </div>
+            </div>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

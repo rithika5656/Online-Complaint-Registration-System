@@ -1,0 +1,18 @@
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PHP
+php/database.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
